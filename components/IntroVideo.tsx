@@ -22,7 +22,7 @@ export default function IntroVideo() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
+    <section className="relative min-h-screen pt-24 md:pt-28 flex items-start justify-center bg-gradient-to-br from-gray-900 via-black to-gray-900 overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_50%)]" />
       
       <motion.div
