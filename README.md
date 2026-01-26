@@ -1,6 +1,6 @@
 # Noel Alam - Portfolio Website
 
-A modern, responsive portfolio website for an Engineering Manager showcasing experience, projects, and testimonials.
+A modern, responsive portfolio website for an Engineering Manager showcasing experience, projects and testimonials.
 
 ## Features
 
