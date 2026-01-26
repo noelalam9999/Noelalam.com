@@ -78,7 +78,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <p className="text-gray-300 leading-relaxed italic">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
               <div className="mt-4 flex gap-1">
                 {[...Array(5)].map((_, i) => (

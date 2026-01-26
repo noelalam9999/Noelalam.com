@@ -29,6 +29,7 @@ A modern, responsive portfolio website for an Engineering Manager showcasing exp
 ### Installation
 
 1. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -38,6 +39,7 @@ pnpm install
 ```
 
 2. Run the development server:
+
 ```bash
 npm run dev
 # or
@@ -57,15 +59,19 @@ pnpm dev
 ## Customization
 
 ### Update Experience
+
 Edit `components/Experience.tsx` to update your work history.
 
 ### Update Projects
+
 Edit `components/Projects.tsx` to showcase your projects.
 
 ### Update Testimonials
+
 Edit `components/Testimonials.tsx` to add or modify recommendations.
 
 ### Styling
+
 Modify `app/globals.css` and Tailwind classes throughout components to customize the design.
 
 ## Build for Production
