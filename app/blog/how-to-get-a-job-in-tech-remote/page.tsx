@@ -48,7 +48,7 @@ export default function BlogPost() {
         >
           <div className="text-gray-300 leading-relaxed space-y-6">
             <p className="text-xl text-gray-400 mb-8">
-              Landing a remote tech job requires a strategic approach tailored to your background. Here's a comprehensive guide based on three common resume profiles.
+              Landing a remote tech job requires a strategic approach tailored to your background. Here&apos;s a comprehensive guide based on three common resume profiles.
             </p>
 
             <div className="bg-white/5 border border-white/10 rounded-xl p-6 mb-8">
@@ -58,21 +58,21 @@ export default function BlogPost() {
                 <div>
                   <h3 className="text-lg font-semibold text-blue-400 mb-2">Resume 1: Technical Professional</h3>
                   <p className="text-gray-400">
-                    You're a technically capable person (Engineer, Designer) who has been in the tech space for quite some time and has worked in a role that allowed you to contribute to tech projects.
+                    You&apos;re a technically capable person (Engineer, Designer) who has been in the tech space for quite some time and has worked in a role that allowed you to contribute to tech projects.
                   </p>
                 </div>
                 
                 <div>
                   <h3 className="text-lg font-semibold text-blue-400 mb-2">Resume 2: Non-Technical Manager</h3>
                   <p className="text-gray-400">
-                    You're a non-technical person but have significant experience as a manager or operations personnel.
+                    You&apos;re a non-technical person but have significant experience as a manager or operations personnel.
                   </p>
                 </div>
                 
                 <div>
                   <h3 className="text-lg font-semibold text-blue-400 mb-2">Resume 3: Career Starter</h3>
                   <p className="text-gray-400">
-                    No experience, doesn't know anything about technology but is willing to learn.
+                    No experience, doesn&apos;t know anything about technology but is willing to learn.
                   </p>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default function BlogPost() {
 
               <section>
                 <h3 className="text-xl font-bold text-blue-400 mb-3">Step 2: Optimize Your LinkedIn Profile</h3>
-                <p>Build your linkedin.com profile. Ensure it's comprehensive, professional, and mirrors your resume while adding more personality and detail.</p>
+                <p>Build your linkedin.com profile. Ensure it&apos;s comprehensive, professional, and mirrors your resume while adding more personality and detail.</p>
               </section>
 
               <section>
@@ -108,7 +108,7 @@ export default function BlogPost() {
 
               <section>
                 <h3 className="text-xl font-bold text-blue-400 mb-3">Step 5: Tailor Your Resume (Critical Step)</h3>
-                <p>Use ChatGPT to readjust your CV so that it fits the requirements for each job. For example, if the job requirement says "we need someone who has worked with scalable solutions," you need to insert a line or two that reflects your experience in working with scalable solutions.</p>
+                <p>Use ChatGPT to readjust your CV so that it fits the requirements for each job. For example, if the job requirement says &quot;we need someone who has worked with scalable solutions,&quot; you need to insert a line or two that reflects your experience in working with scalable solutions.</p>
                 
                 <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4 mt-4">
                   <p className="text-yellow-300 font-medium">Important Note:</p>
@@ -120,7 +120,7 @@ export default function BlogPost() {
 
               <section>
                 <h3 className="text-xl font-bold text-blue-400 mb-3">Step 6: Prepare for First Round Interviews</h3>
-                <p>Once you have applied to a significant number of jobs, there is a 5% chance that one of them will ask you to come in for the first round of interview. It's very important that you have answers to the following questions:</p>
+                <p>Once you have applied to a significant number of jobs, there is a 5% chance that one of them will ask you to come in for the first round of interview. It&apos;s very important that you have answers to the following questions:</p>
                 
                 <div className="bg-white/5 border border-white/10 rounded-lg p-6 mt-4 space-y-4">
                   <div>
@@ -139,8 +139,8 @@ export default function BlogPost() {
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-white mb-2">What's your plan for the next 5 years?</h4>
-                    <p className="text-gray-400 text-sm">Demonstrate ambition aligned with the company's growth trajectory.</p>
+                    <h4 className="font-semibold text-white mb-2">What&apos;s your plan for the next 5 years?</h4>
+                    <p className="text-gray-400 text-sm">Demonstrate ambition aligned with the company&apos;s growth trajectory.</p>
                   </div>
                 </div>
 
@@ -159,7 +159,7 @@ export default function BlogPost() {
                 <p>Prepare for the technical round. This will vary based on the job you have applied for. Some good places to prepare for this round are:</p>
                 <ul className="list-disc list-inside ml-4 space-y-2 text-gray-400 mt-3">
                   <li>turing.com</li>
-                  <li>'Mock technical interview' videos on YouTube</li>
+                  <li>&apos;Mock technical interview&apos; videos on YouTube</li>
                 </ul>
                 
                 <p className="mt-4">9 out of 10 times, the questions published online are similar to what the interviewer will ask you.</p>
@@ -173,12 +173,12 @@ export default function BlogPost() {
                     </div>
                     <div>
                       <span className="text-blue-400 font-medium">Senior Role:</span>
-                      <p className="text-gray-400 text-sm mt-1">You would be asked which database is more suitable for a Weather forecast website. The more senior the role, the more you're expected to give answers based on context rather than straightforward answers.</p>
+                      <p className="text-gray-400 text-sm mt-1">You would be asked which database is more suitable for a Weather forecast website. The more senior the role, the more you&apos;re expected to give answers based on context rather than straightforward answers.</p>
                     </div>
                   </div>
                 </div>
 
-                <p className="mt-4">If it's for a more senior position, practice scenario-based questions that imitate real life.</p>
+                <p className="mt-4">If it&apos;s for a more senior position, practice scenario-based questions that imitate real life.</p>
               </section>
 
               <section>
@@ -194,15 +194,15 @@ export default function BlogPost() {
 
                 <div className="mt-4 space-y-3">
                   <div>
-                    <span className="text-white font-medium">If it's a startup:</span>
+                    <span className="text-white font-medium">If it&apos;s a startup:</span>
                     <p className="text-gray-400 text-sm mt-1">The CEO would expect you to work day in and day out without looking at the clock.</p>
                   </div>
                   <div>
-                    <span className="text-white font-medium">If it's an established company:</span>
+                    <span className="text-white font-medium">If it&apos;s an established company:</span>
                     <p className="text-gray-400 text-sm mt-1">The CEO would want to see your fire-fighting and commanding skills.</p>
                   </div>
                   <div>
-                    <span className="text-white font-medium">If it's a 100% technical role:</span>
+                    <span className="text-white font-medium">If it&apos;s a 100% technical role:</span>
                     <p className="text-gray-400 text-sm mt-1">The CEO would want to see how obsessed you are with your craft.</p>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function BlogPost() {
               <div className="space-y-6">
                 <section>
                   <h3 className="text-xl font-bold text-blue-400 mb-3">For Non-Technical Managers (Resume 2)</h3>
-                  <p>If you are a person of Resume 2, it's best to apply for positions such as:</p>
+                  <p>If you are a person of Resume 2, it&apos;s best to apply for positions such as:</p>
                   <ul className="list-disc list-inside ml-4 space-y-2 text-gray-400 mt-3">
                     <li>Product Lead</li>
                     <li>Engineering Manager</li>
@@ -226,7 +226,7 @@ export default function BlogPost() {
 
                 <section>
                   <h3 className="text-xl font-bold text-blue-400 mb-3">For Career Starters (Resume 3)</h3>
-                  <p>If you are a person of Resume 3, it's best to join a bootcamp or similar network to get some footing into the tech field. This will provide you with:</p>
+                  <p>If you are a person of Resume 3, it&apos;s best to join a bootcamp or similar network to get some footing into the tech field. This will provide you with:</p>
                   <ul className="list-disc list-inside ml-4 space-y-2 text-gray-400 mt-3">
                     <li>Structured learning path</li>
                     <li>Hands-on project experience</li>
