@@ -46,6 +46,31 @@ export default function Navigation() {
     }
   };
 
+  const handleSectionClick = (sectionId: string) => {
+    // Check if we're on the home page
+    const isHomePage = window.location.pathname === '/';
+    
+    if (isHomePage) {
+      // If on home page, scroll to section
+      scrollToSection(sectionId);
+    } else {
+      // If on another page, navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
+    }
+  };
+
+  const handleLogoClick = () => {
+    const isHomePage = window.location.pathname === '/';
+    
+    if (isHomePage) {
+      // If on home page, scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      // If on another page, navigate to home page
+      window.location.href = '/';
+    }
+  };
+
   const navigateToPage = (path: string) => {
     window.location.href = path;
   };
@@ -68,7 +93,7 @@ export default function Navigation() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={handleLogoClick}
             className="text-base sm:text-lg font-semibold tracking-wide bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
           >
             NOEL ALAM
@@ -78,7 +103,7 @@ export default function Navigation() {
             {['experience', 'projects', 'testimonials'].map((section) => (
               <button
                 key={section}
-                onClick={() => scrollToSection(section)}
+                onClick={() => handleSectionClick(section)}
                 className={`relative rounded-full px-3 py-1.5 text-xs font-medium uppercase tracking-wider transition-all ${
                   activeSection === section
                     ? 'text-white bg-white/10'
@@ -129,7 +154,7 @@ export default function Navigation() {
                 <button
                   key={section}
                   onClick={() => {
-                    scrollToSection(section);
+                    handleSectionClick(section);
                     setIsMobileMenuOpen(false);
                   }}
                   className="text-left rounded-lg px-3 py-2 text-sm font-medium uppercase tracking-wider text-gray-300 hover:text-white hover:bg-white/5 transition-all"

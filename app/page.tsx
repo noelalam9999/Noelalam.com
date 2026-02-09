@@ -22,6 +22,27 @@ export default function Home() {
     preloadResources();
   }, []);
 
+  useEffect(() => {
+    // Handle hash navigation after loading completes
+    if (!isLoading && window.location.hash) {
+      const hash = window.location.hash.substring(1); // Remove the # symbol
+      const element = document.getElementById(hash);
+      if (element) {
+        // Wait a bit for animations to complete
+        setTimeout(() => {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    }
+  }, [isLoading]);
+
   return (
     <main className="min-h-screen">
       <AnimatePresence mode="wait">
