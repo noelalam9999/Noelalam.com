@@ -14,30 +14,20 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Scalable Microservices Platform',
-    description: 'Architected and built a distributed system handling 10M+ requests daily. Implemented event-driven architecture with Kafka, reducing latency by 60%.',
-    technologies: ['Go', 'Kafka', 'Kubernetes', 'PostgreSQL', 'Redis'],
-    link: 'https://example.com',
-    github: 'https://github.com'
+    title: 'Vivian Studios - High-Performance Web Experience',
+    description: 'Built custom animations using raw React and JavaScript without heavy libraries. Focused on frontend optimization techniques to significantly reduce load times and deliver smooth, performant user experiences.',
+    technologies: ['React', 'JavaScript', 'Performance Optimization', 'CSS Animations'],
+    link: 'https://vivianstudios.com'
   },
   {
-    title: 'Real-time Analytics Dashboard',
-    description: 'Built a comprehensive analytics platform with real-time data visualization. Processed terabytes of data using Apache Spark and provided insights to stakeholders.',
-    technologies: ['React', 'TypeScript', 'Apache Spark', 'D3.js', 'Python'],
-    link: 'https://example.com'
+    title: 'Enterprise ERP System',
+    description: 'Led a cross-functional team of 14+ members (engineers, QA, and product head) to build a comprehensive ERP platform featuring invoicing, payroll, client support, inventory management, and sales modules. Part of a business generating $180M USD in annual recurring revenue.',
+    technologies: ['React', 'Node.js', 'PostgreSQL', 'TypeScript', 'Microservices', 'REST APIs']
   },
   {
-    title: 'Mobile-First E-commerce Platform',
-    description: 'Led development of a high-performance e-commerce platform serving 1M+ users. Optimized for mobile with PWA capabilities and achieved 99.9% uptime.',
-    technologies: ['Next.js', 'Node.js', 'MongoDB', 'Stripe', 'AWS'],
-    link: 'https://example.com',
-    github: 'https://github.com'
-  },
-  {
-    title: 'AI-Powered Recommendation Engine',
-    description: 'Developed machine learning models for personalized recommendations. Increased user engagement by 35% and improved conversion rates significantly.',
-    technologies: ['Python', 'TensorFlow', 'FastAPI', 'Docker', 'MLflow'],
-    github: 'https://github.com'
+    title: 'Multi-Carrier Shipping Platform',
+    description: 'Led a team of 4 engineers to build a B2B shipping application in just 6 weeks. Integrated 50+ APIs to connect with all major shipping companies, incorporating insurance technology and lending party integrations. First major experience managing a complex B2B product.',
+    technologies: ['TypeScript', 'Node.js', 'API Integration', 'Insurance Tech', 'FinTech', 'React']
   }
 ];
 

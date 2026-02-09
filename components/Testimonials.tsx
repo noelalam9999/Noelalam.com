@@ -14,28 +14,16 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: 'Sarah Johnson',
-    role: 'VP of Engineering',
-    company: 'Tech Corp',
-    content: 'Noel is an exceptional engineering manager who combines technical depth with strong leadership skills. Under his guidance, our team delivered complex projects ahead of schedule while maintaining high code quality. His ability to mentor engineers and foster a collaborative environment is outstanding.',
+    name: 'Alessandro Zanardi',
+    role: 'Ex-Facebook Engineer',
+    company: 'Mentor & Educator',
+    content: 'Noel graduated from my institution and demonstrated exceptional talent and dedication from the start. What makes me particularly proud is seeing him evolve from a student to becoming a mentor himself. His journey reflects not just technical excellence, but also a commitment to giving back to the community and helping others grow.',
   },
   {
-    name: 'Michael Chen',
-    role: 'Senior Product Manager',
-    company: 'Innovate Labs',
-    content: 'Working with Noel has been a pleasure. He has a unique ability to translate product requirements into technical solutions while keeping the team aligned and motivated. His strategic thinking and execution excellence make him a valuable asset to any organization.',
-  },
-  {
-    name: 'Emily Rodriguez',
-    role: 'CTO',
-    company: 'StartupXYZ',
-    content: 'Noel\'s technical expertise and leadership have been instrumental in scaling our engineering team. He not only writes excellent code but also excels at building processes, mentoring talent, and driving innovation. I highly recommend him for any engineering leadership role.',
-  },
-  {
-    name: 'David Kim',
-    role: 'Engineering Director',
-    company: 'CloudScale Inc',
-    content: 'Noel demonstrates exceptional problem-solving skills and technical acumen. He consistently delivers high-quality solutions and has a proven track record of leading successful projects. His communication skills and ability to work cross-functionally make him an ideal engineering manager.',
+    name: 'Eshtiaque Khan',
+    role: 'Faculty Member',
+    company: 'IE University',
+    content: 'Noel showed remarkable capability in handling multiple projects simultaneously while maintaining high quality standards. His contributions were instrumental in taking my startup from zero to one - his technical skills, strategic thinking, and execution ability helped us transform our vision into reality. He\'s the kind of engineer every startup needs in its early stages.',
   }
 ];
 

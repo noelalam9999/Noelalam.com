@@ -15,39 +15,39 @@ interface ExperienceItem {
 const experiences: ExperienceItem[] = [
   {
     title: 'Engineering Manager',
-    company: 'Tech Company',
-    period: '2022 - Present',
+    company: 'Daniyal Technologies',
+    period: 'June 2025 - Present',
     description: [
-      'Led a team of 15+ engineers across multiple product lines',
-      'Improved team velocity by 40% through process optimization',
-      'Mentored junior engineers and established best practices',
-      'Collaborated with product and design teams to deliver high-quality features'
+      'Leading engineering teams and driving technical strategy',
+      'Establishing best practices and development processes',
+      'Mentoring engineers and fostering team growth',
+      'Collaborating with stakeholders to deliver innovative solutions'
     ],
     technologies: ['React', 'TypeScript', 'Node.js', 'AWS', 'Docker', 'Kubernetes']
   },
   {
-    title: 'Senior Software Engineer',
-    company: 'Previous Company',
-    period: '2020 - 2022',
+    title: 'Senior Software Engineer & Mentor',
+    company: 'Codeworks',
+    period: 'June 2022 - June 2025',
     description: [
-      'Architected and built scalable microservices',
-      'Reduced system latency by 60% through optimization',
-      'Led technical initiatives and code reviews',
-      'Collaborated with cross-functional teams'
+      'Mentored aspiring developers through intensive software engineering bootcamp',
+      'Architected and built scalable full-stack applications',
+      'Conducted technical interviews and curriculum development',
+      'Led workshops on advanced JavaScript, React, and system design'
     ],
-    technologies: ['Python', 'Django', 'PostgreSQL', 'Redis', 'Elasticsearch']
+    technologies: ['React', 'Node.js', 'TypeScript', 'PostgreSQL', 'MongoDB', 'GraphQL', 'AWS']
   },
   {
-    title: 'Software Engineer',
-    company: 'Startup Company',
-    period: '2019 - 2020',
+    title: 'Founder & Software Engineer',
+    company: 'Astronaut Digital',
+    period: 'June 2019 - June 2022',
     description: [
-      'Developed full-stack web applications',
-      'Built RESTful APIs and integrated third-party services',
-      'Participated in agile development processes',
-      'Contributed to product roadmap planning'
+      'Founded and built digital products from concept to launch',
+      'Developed full-stack web applications and mobile solutions',
+      'Managed client relationships and project delivery',
+      'Built scalable infrastructure and optimized performance'
     ],
-    technologies: ['JavaScript', 'React', 'Express', 'MongoDB', 'GraphQL']
+    technologies: ['JavaScript', 'React', 'React Native', 'Node.js', 'Express', 'MongoDB', 'Firebase']
   }
 ];
 
@@ -67,7 +67,7 @@ export default function Experience() {
           <h2 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Experience
           </h2>
-          <p className="text-gray-400 text-lg">5 years of building and leading engineering teams</p>
+          <p className="text-gray-400 text-lg">6+ years of building and leading engineering teams</p>
         </motion.div>
 
         <div ref={ref} className="space-y-12">
