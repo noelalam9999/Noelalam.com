@@ -6,6 +6,14 @@ import Navigation from '@/components/Navigation';
 
 const blogPosts = [
   {
+    slug: 'refactoring-margin-fowler',
+    title: "Refactoring — Your Coach's Guide",
+    excerpt: "A chat-style guide to Martin Fowler's \"Refactoring: Improving the Design of Existing Code\" (2nd ed.) — actionable DO/DON'T points for all 12 chapters, your path to world-class refactoring.",
+    date: 'February 18, 2026',
+    readTime: '20 min read',
+    category: 'Engineering'
+  },
+  {
     slug: 'how-to-get-a-job-in-tech-remote',
     title: 'How to get a job in a Tech Field Remote',
     excerpt: 'A comprehensive guide for technical professionals, managers, and beginners on landing remote tech jobs. Learn about resume optimization, interview preparation, and strategic job searching.',
