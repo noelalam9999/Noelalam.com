@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website for an Engineering Manager showcasing experience, projects, and testimonials.
 
-## Features 
+## Features -
 
 - **Smooth Loader**: Animated loading screen with progress indicator
 - **Intro Video Section**: Hero section with video placeholder (ready for your video)
