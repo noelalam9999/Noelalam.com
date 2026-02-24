@@ -237,7 +237,7 @@ export default function CleanCodeRobertMartinInterviewGuide() {
                 </li>
                 <li>
                   <span className="text-white font-semibold">For candidates:</span> Tie answers to real code you’ve
-                  written or reviewed. Use terms like "one thing," "Law of Demeter," "FIRST," and "clean test" with
+                  written or reviewed. Use terms like &quot;one thing,&quot; &quot;Law of Demeter,&quot; &quot;FIRST,&quot; and &quot;clean test&quot; with
                   specific stories.
                 </li>
                 <li>
