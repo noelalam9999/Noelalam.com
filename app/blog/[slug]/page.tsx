@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Navigation from '@/components/Navigation';
 import { getBlogBySlug } from '@/lib/blogs';
+import BlogContent from '@/components/blog/BlogContent';
 
 type PageProps = {
   params: {
@@ -26,11 +27,11 @@ export default async function BlogPostPage({ params }: PageProps) {
     <main className="min-h-screen bg-black">
       <Navigation />
 
-      <article className="max-w-3xl mx-auto px-4 pt-32 pb-20">
-        <div className="mb-8">
+      <article className="max-w-4xl mx-auto px-4 pt-32 pb-20">
+        <div className="mb-12">
           <Link
             href="/blog"
-            className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-4 transition-colors"
+            className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-6 transition-colors"
           >
             <svg
               className="w-5 h-5 mr-2"
@@ -52,25 +53,28 @@ export default async function BlogPostPage({ params }: PageProps) {
             {blog.category}
           </span>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
             {blog.title}
           </h1>
 
           <div className="flex items-center gap-4 text-sm text-gray-400">
             <span>{publishedDate}</span>
-            {blog.readTimeMinutes ? (
+            {blog.data.metadata.readTime && (
               <>
                 <span>•</span>
-                <span>{blog.readTimeMinutes} min read</span>
+                <span>{blog.data.metadata.readTime}</span>
               </>
-            ) : null}
+            )}
           </div>
+
+          {blog.data.metadata.excerpt && (
+            <p className="text-lg text-gray-400 mt-4 leading-relaxed">
+              {blog.data.metadata.excerpt}
+            </p>
+          )}
         </div>
 
-        <div
-          className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: blog.content }}
-        />
+        <BlogContent content={blog.data.content} />
       </article>
     </main>
   );

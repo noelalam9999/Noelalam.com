@@ -96,9 +96,7 @@ export default function BlogList({
           },
         );
 
-        const readTimeLabel = post.readTimeMinutes
-          ? `${post.readTimeMinutes} min read`
-          : undefined;
+        const readTimeLabel = post.readTime || undefined;
 
         return (
           <motion.article
