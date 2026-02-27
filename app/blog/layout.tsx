@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BlogReadingLayout from "@/components/BlogReadingLayout";
 
 export const metadata: Metadata = {
   title: "Blog - Noel Alam",
@@ -10,5 +11,5 @@ export default function BlogLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return <BlogReadingLayout>{children}</BlogReadingLayout>;
 }
