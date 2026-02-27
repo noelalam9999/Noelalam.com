@@ -1,12 +1,14 @@
 'use client';
 
 import { BlogContent } from '@/lib/blogs';
+import SectionNotes from './SectionNotes';
 
 type CoachGuideContentProps = {
   content: BlogContent;
+  slug: string;
 };
 
-export default function CoachGuideContent({ content }: CoachGuideContentProps) {
+export default function CoachGuideContent({ content, slug }: CoachGuideContentProps) {
   const { sections = [], introduction, instructions, conclusion } = content;
 
   return (
@@ -79,6 +81,8 @@ export default function CoachGuideContent({ content }: CoachGuideContentProps) {
               <p className="text-gray-300">{section.coachNote}</p>
             </div>
           )}
+
+          <SectionNotes sectionId={section.id || `section-${idx}`} blogSlug={slug} />
         </div>
       ))}
 
@@ -93,6 +97,8 @@ export default function CoachGuideContent({ content }: CoachGuideContentProps) {
           {conclusion.author && (
             <p className="text-gray-400 italic">{conclusion.author}</p>
           )}
+
+          <SectionNotes sectionId="conclusion" blogSlug={slug} />
         </div>
       )}
     </div>

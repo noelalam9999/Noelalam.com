@@ -1,12 +1,14 @@
 'use client';
 
 import { BlogContent } from '@/lib/blogs';
+import SectionNotes from './SectionNotes';
 
 type InterviewGuideContentProps = {
   content: BlogContent;
+  slug: string;
 };
 
-export default function InterviewGuideContent({ content }: InterviewGuideContentProps) {
+export default function InterviewGuideContent({ content, slug }: InterviewGuideContentProps) {
   const { sections = [], introduction } = content;
 
   return (
@@ -63,6 +65,8 @@ export default function InterviewGuideContent({ content }: InterviewGuideContent
               )}
             </div>
           ))}
+
+          <SectionNotes sectionId={section.id || `section-${idx}`} blogSlug={slug} />
         </section>
       ))}
     </div>

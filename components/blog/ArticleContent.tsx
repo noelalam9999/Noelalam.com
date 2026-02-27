@@ -1,12 +1,14 @@
 'use client';
 
 import { BlogContent } from '@/lib/blogs';
+import SectionNotes from './SectionNotes';
 
 type ArticleContentProps = {
   content: BlogContent;
+  slug: string;
 };
 
-export default function ArticleContent({ content }: ArticleContentProps) {
+export default function ArticleContent({ content, slug }: ArticleContentProps) {
   const { sections = [], introduction } = content;
 
   return (
@@ -46,6 +48,8 @@ export default function ArticleContent({ content }: ArticleContentProps) {
                   ))}
                 </ul>
               )}
+
+              <SectionNotes sectionId={section.id || `info-${idx}`} blogSlug={slug} />
             </div>
           );
         }
@@ -160,6 +164,8 @@ export default function ArticleContent({ content }: ArticleContentProps) {
                   )}
                 </div>
               ))}
+
+              <SectionNotes sectionId={section.id || `text-${idx}`} blogSlug={slug} />
             </div>
           );
         }

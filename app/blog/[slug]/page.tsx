@@ -74,7 +74,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           )}
         </div>
 
-        <BlogContent content={blog.data.content} />
+        <BlogContent content={blog.data.content} slug={blog.slug} />
       </article>
     </main>
   );

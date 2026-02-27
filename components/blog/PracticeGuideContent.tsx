@@ -1,12 +1,14 @@
 'use client';
 
 import { BlogContent } from '@/lib/blogs';
+import SectionNotes from './SectionNotes';
 
 type PracticeGuideContentProps = {
   content: BlogContent;
+  slug: string;
 };
 
-export default function PracticeGuideContent({ content }: PracticeGuideContentProps) {
+export default function PracticeGuideContent({ content, slug }: PracticeGuideContentProps) {
   const { parts = [], introduction, instructions } = content;
 
   return (
@@ -58,6 +60,8 @@ export default function PracticeGuideContent({ content }: PracticeGuideContentPr
               </div>
             </div>
           ))}
+
+          <SectionNotes sectionId={part.id || `part-${idx}`} blogSlug={slug} />
         </div>
       ))}
     </div>

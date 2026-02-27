@@ -1,7 +1,7 @@
 import { sql } from './db';
 
 export type BlogContent = {
-  type: 'interview-guide' | 'practice-guide' | 'coach-guide' | 'article';
+  type: 'interview-guide' | 'practice-guide' | 'coach-guide' | 'article' | 'project-guide';
   sections?: any[];
   parts?: any[];
   introduction?: string;

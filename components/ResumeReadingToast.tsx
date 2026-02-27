@@ -51,7 +51,11 @@ export default function ResumeReadingToast() {
     if (typeof window === 'undefined') return;
 
     try {
-      window.sessionStorage.setItem(RESUME_PATH_KEY, progress.path);
+      // Store both path and scroll position
+      window.sessionStorage.setItem(RESUME_PATH_KEY, JSON.stringify({
+        path: progress.path,
+        scrollY: progress.scrollY
+      }));
     } catch {
       // ignore
     }
